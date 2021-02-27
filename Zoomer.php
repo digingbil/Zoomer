@@ -16,7 +16,7 @@
  	private $users = [];
  	private $is_wp = false;
  	private $is_joomla = false;
- 	private $headers = '';
+ 	private $headers = [];
 
  	public function __construct(){
  			
@@ -26,7 +26,8 @@
 
  		$this->headers = [
  			'content-type' => 'application/json',
- 			'authorization' => 'Bearer '.self::ZOOM_JWTK_KEY
+ 			'authorization' => 'Bearer '.self::ZOOM_JWTK_KEY,
+            'Accept: application/json'
  		];
 
  		if( $this->is_wp ) {
@@ -162,11 +163,7 @@
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => json_encode($body),
-            CURLOPT_HTTPHEADER => [
-                'authorization: Bearer ' . self::ZOOM_JWTK_KEY,
-                'content-type: application/json',
-                'Accept: application/json',
-            ],
+            CURLOPT_HTTPHEADER => $this->headers
         ]);
 
 
