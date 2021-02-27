@@ -54,15 +54,15 @@
  		$users = [
 
  			[
- 				'email' => 'ztanevski@hotmail.com',
- 				'first_name' => 'Zoran',
- 				'last_name' => 'Tanevski',
+ 				'email' => 'someuser@someemail.com',
+ 				'first_name' => 'John',
+ 				'last_name' => 'Doe',
  				'country' => 'MK'
  			],
  			[
- 				'email' => 'zoran@tanevski.com',
- 				'first_name' => 'Jim',
- 				'last_name' => 'Morrison',
+ 				'email' => 'someuser2@someemail2.com',
+ 				'first_name' => 'Super',
+ 				'last_name' => 'Man',
  				'country' => 'US'
  			],
 
