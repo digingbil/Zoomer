@@ -16,6 +16,6 @@ Ho to use it:
     
     https://mysite.com/Zoomer.php
     
-5. Your users should be now registered on your meeting. Depenging on your site the code will decide which approach it will use. Is the site is WordPress or Joomla! then it will use their native API functions.
+5. Your users should be now registered on your meeting. Depenging on your site the code will decide which approach it will use. If the site is WordPress or Joomla! then it will use their native API functions.
 
 6. Enjoy.
