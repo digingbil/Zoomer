@@ -27,7 +27,7 @@
  		$this->headers = [
  			'content-type' => 'application/json',
  			'authorization' => 'Bearer '.self::ZOOM_JWTK_KEY,
-            'Accept: application/json'
+            'Accept' => 'application/json'
  		];
 
  		if( $this->is_wp ) {
